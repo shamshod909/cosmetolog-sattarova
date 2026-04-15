@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Madina Sattorova — kosmetolog</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header">
+
+<nav class="menu">
+<a href="#about" data-ru="Обо мне" data-uz="Men haqimda">Обо мне</a>
+<a href="#services" data-ru="Услуги" data-uz="Xizmatlar">Услуги</a>
+<!--<a href="#reviews" data-ru="Отзывы" data-uz="Sharhlar">Отзывы</a>-->
+    <a class="insta-link"
+       href="https://www.instagram.com/cosmetolog_sattarova">
+    <img src="/static/img/insta.png"
+         alt="insta"
+         title="insta"
+         width="30"
+         height="30">
+</a>
+
+
+
+</nav>
+
+<div class="lang-switch">
+<button onclick="setLang('ru')">RU</button>
+<button onclick="setLang('uz')">UZ</button>
+</div>
+
+<a href="#" class="apply-btn open-popup"
+data-ru="Записаться на консультацию"
+data-uz="Konsultatsiyaga yozilish">
+Записаться на консультацию
+</a>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<p class="subtitle"
+data-ru="КОСМЕТОЛОГ ЭСТЕТИСТ"
+data-uz="KOSMETOLOG-ESTETIST">
+КОСМЕТОЛОГ ЭСТЕТИСТ
+</p>
+
+<h1>Madina Sattorova</h1>
+
+<h3 class="services"
+data-ru="Помогаю пациентам сохранять красоту и молодость на долгие годы. Обучаю начинающих специалистов в школе эстетики лица по авторским методикам."
+data-uz="Bemorlarga ko‘p yillar davomida go‘zallik va yoshlikni saqlashga yordam beraman. Yuz estetikasi maktabida boshlovchi mutaxassislarni mualliflik metodikalarim bo‘yicha o‘qitaman.">
+Помогаю пациентам сохранять красоту и молодость на долгие годы. Обучаю начинающих специалистов в школе эстетики лица по авторским методикам.
+</h3>
+
+<button class="btn open-popup"
+data-ru="Записаться на консультацию"
+data-uz="Konsultatsiyaga yozilish">
+Записаться на консультацию
+</button>
+
+</div>
+
+<div class="hero-image">
+<div class="bg"></div>
+<div class="frame"></div>
+
+<img src="{{ url_for('static', filename='img/f3.PNG') }}" class="photo">
+<img src="{{ url_for('static', filename='img/circle.png') }}" class="circle">
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="about-section">
+
+<div class="about-container">
+
+<div class="about-images">
+<img src="{{ url_for('static', filename='img/f1.PNG') }}" class="about-main">
+<img src="{{ url_for('static', filename='img/f2.PNG') }}" class="about-small">
+</div>
+
+<div class="about-text">
+
+<p class="subtitle"
+data-ru="ОБО МНЕ"
+data-uz="MEN HAQIMDA">
+ОБО МНЕ
+</p>
+
+<h2
+data-ru="Уход за кожей — это традиция"
+data-uz="Teri parvarishi — bu an’ana">
+Уход за кожей — это традиция
+</h2>
+
+<p
+data-ru="Мой подход – бережность и профессионализм. Акцент в своей работе я делаю на качество кожи. Мой опыт в индустрии более 18 лет. Создаю индивидуальные программы ухода для своих пациентов. Восстанавливаю кожу после агрессивных процедур и пластических операций. Ставлю руку начинающим косметологам-эстетистам и работаю с ведущими косметическими брендами."
+data-uz="Mening yondashuvim ehtiyotkorlik va professionallikdir. Ishimda asosiy e’tiborni terining sifatiga qarataman. Kosmetologiya sohasida 18 yildan ortiq tajribaga egaman. Bemorlarim uchun individual teri parvarishi dasturlarini ishlab chiqaman. Agressiv muolajalar va plastik operatsiyalardan keyin terini tiklash bilan shug‘ullanaman. Boshlovchi kosmetolog-estetistlarga tajriba o‘rgataman va yetakchi kosmetik brendlar bilan ishlayman.">
+Мой подход – бережность и профессионализм. Акцент в своей работе я делаю на качество кожи. Мой опыт в индустрии более 18 лет. Создаю индивидуальные программы ухода для своих пациентов. Восстанавливаю кожу после агрессивных процедур и пластических операций. Ставлю руку начинающим косметологам-эстетистам и работаю с ведущими косметическими брендами.
+</p>
+
+<p
+data-ru="Создаю индивидуальные программы ухода для пациентов. Помогаю восстанавливать кожу после агрессивных процедур."
+data-uz="Bemorlarim uchun individual parvarish dasturlarini yarataman. Agressiv muolajalar va plastik operatsiyalardan keyin terini tiklashga yordam beraman.">
+Создаю индивидуальные программы ухода для пациентов. Помогаю восстанавливать кожу после агрессивных процедур.
+</p>
+
+<div class="about-stats">
+
+<div>
+<h3>7</h3>
+<p data-ru="лет практики" data-uz="yillik tajriba">лет практики</p>
+</div>
+
+<div>
+<h3>PCA Skin</h3>
+<p data-ru="официальный тренер" data-uz="rasmiy trener">официальный тренер</p>
+</div>
+
+<div>
+<h3>Librederm</h3>
+<p data-ru="эксперт" data-uz="ekspert">эксперт</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="services" class="services-section">
+
+<p class="subtitle"
+data-ru="УСЛУГИ В КЛИНИКЕ"
+data-uz="KLINIKADAGI XIZMATLAR">
+УСЛУГИ В КЛИНИКЕ
+</p>
+
+<h2 class="services-title"
+data-ru="Комплексные программы сертифицированного специалиста в области эстетической косметологии"
+data-uz="Estetik kosmetologiya sohasida sertifikatlangan mutaxassisning kompleks dasturlari">
+Комплексные программы сертифицированного специалиста в области эстетической косметологии
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3 data-ru="Здоровая кожа" data-uz="Sog‘lom teri">
+Здоровая кожа
+</h3>
+<span class="line"></span>
+<p
+data-ru="Восстановление и лечение кожи склонной к воспалениям, покраснениям и повышенной чувствительности. Программа направлена на укрепление защитного барьера кожи и улучшение её общего состояния."
+data-uz="Yallig‘lanish, qizarish va sezuvchanlikka moyil terini tiklash va davolash. Dastur terining himoya qatlamini mustahkamlash va umumiy holatini yaxshilashga qaratilgan.">
+Восстановление и лечение кожи склонной к воспалениям, покраснениям и повышенной чувствительности. Программа направлена на укрепление защитного барьера кожи и улучшение её общего состояния.
+</p>
+</div>
+
+<div class="service-card">
+<h3 data-ru="Чистая кожа" data-uz="Toza teri">
+Чистая кожа
+</h3>
+<span class="line"></span>
+<p
+data-ru="Комплексная программа очищения кожи с применением современных косметологических методик, включая пилинги, аппаратные процедуры и профессиональный уход."
+data-uz="Zamonaviy kosmetologik usullar yordamida terini chuqur va kompleks tozalash dasturi. Pilinglar, apparat muolajalari va professional parvarish qo‘llaniladi.">
+Комплексная программа очищения кожи с применением современных косметологических методик, включая пилинги, аппаратные процедуры и профессиональный уход.
+</p>
+</div>
+
+<div class="service-card">
+<h3 data-ru="Ровный тон кожи" data-uz="Teri rangini tekislash">
+Ровный тон кожи
+</h3>
+<span class="line"></span>
+<p
+data-ru="Профилактика и лечение гиперпигментации с использованием современных методик. Помогает выровнять тон кожи, вернуть ей сияние и здоровый внешний вид."
+data-uz="Zamonaviy metodlar yordamida giperpigmentatsiyani oldini olish va davolash. Terining rangini tekislash, unga sog‘lom va yorqin ko‘rinish berishga yordam beradi.">
+Профилактика и лечение гиперпигментации с использованием современных методик. Помогает выровнять тон кожи, вернуть ей сияние и здоровый внешний вид.
+</p>
+</div>
+
+<div class="service-card">
+<h3 data-ru="Омоложение" data-uz="Yoshartirish">
+Омоложение
+</h3>
+<span class="line"></span>
+<p
+data-ru="Сочетание аппаратных методов и профессиональных уходов, направленных на повышение упругости кожи, улучшение её тонуса и замедление процессов старения."
+data-uz="Terining elastikligini oshirish, tonusini yaxshilash va qarish jarayonlarini sekinlashtirishga qaratilgan apparat va professional parvarish muolajalari kombinatsiyasi.">
+Сочетание аппаратных методов и профессиональных уходов, направленных на повышение упругости кожи, улучшение её тонуса и замедление процессов старения.
+</p>
+</div>
+
+<div class="service-card">
+<h3 data-ru="Домашний уход" data-uz="Uy parvarishi">
+Домашний уход
+</h3>
+<span class="line"></span>
+<p
+data-ru="Подбор индивидуальной системы домашнего ухода с учетом типа кожи, её состояния и текущих потребностей для поддержания результатов процедур."
+data-uz="Teri turiga va holatiga qarab individual uy parvarishi tizimini tanlash. Bu muolajalar natijasini uzoq vaqt saqlashga yordam beradi.">
+Подбор индивидуальной системы домашнего ухода с учетом типа кожи, её состояния и текущих потребностей для поддержания результатов процедур.
+</p>
+</div>
+
+<div class="service-card">
+<h3 data-ru="Anti-age уход" data-uz="Anti-age parvarish">
+Anti-age уход
+</h3>
+<span class="line"></span>
+<p
+data-ru="Комплексные программы ухода за возрастной кожей, направленные на восстановление упругости, питание кожи и улучшение её текстуры."
+data-uz="Yoshga bog‘liq teri uchun kompleks parvarish dasturlari. Terining elastikligini tiklash, oziqlantirish va tuzilishini yaxshilashga qaratilgan.">
+Комплексные программы ухода за возрастной кожей, направленные на восстановление упругости, питание кожи и улучшение её текстуры.
+</p>
+</div>
+
+</div>
+
+<button class="btn btn-big open-popup"
+data-ru="Оставить заявку"
+data-uz="Ariza qoldirish">
+Оставить заявку
+</button>
+
+</section>
+
+
+
+<section class="education-section">
+
+<div class="education-container">
+
+<div class="education-text">
+
+<h2
+data-ru="Индивидуальное обучение для специалистов"
+data-uz="Mutaxassislar uchun individual ta’lim">
+Индивидуальное обучение для специалистов
+</h2>
+
+<h3
+data-ru="Обучаю самым важным аспектам в работе с кожей и помогаю усовершенствовать свои навыки
+Поддерживаю и вдохновляю на дальнейшее развитие. Делюсь своими авторскими наработками и опытом."
+data-uz="Teri bilan ishlashning eng muhim jihatlarini o‘rgataman va professional tajribam bilan bo‘lishaman.">
+Обучаю самым важным аспектам в работе с кожей и помогаю усовершенствовать свои навыки
+Поддерживаю и вдохновляю на дальнейшее развитие. Делюсь своими авторскими наработками и опытом.
+</h3>
+
+<button class="btn open-popup"
+data-ru="Оставить заявку"
+data-uz="Ariza qoldirish">
+Оставить заявку
+</button>
+
+</div>
+
+<div class="education-images">
+<img src="{{ url_for('static', filename='img/cosmetologist.png') }}">
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--<section class="lecture-section">-->
+
+<!--<div class="lecture-container">-->
+
+<!--<img src="{{ url_for('static', filename='img/cosmetologist.png') }}">-->
+
+<!--<div>-->
+
+<!--<h2-->
+<!--data-ru="Лекторий школы эстетики лица"-->
+<!--data-uz="Yuz estetikasi maktabi lektoriyasi">-->
+<!--Лекторий школы эстетики лица-->
+<!--</h2>-->
+
+<!--<h3-->
+<!--data-ru="Онлайн лекции для пациентов"-->
+<!--data-uz="Bemorlar uchun onlayn ma’ruzalar">-->
+<!--Онлайн лекции для пациентов-->
+<!--</h3>-->
+
+<!--<button class="btn"-->
+<!--data-ru="Подробности скоро"-->
+<!--data-uz="Tez orada batafsil">-->
+<!--Подробности скоро-->
+<!--</button>-->
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</section>-->
+
+
+
+<section class="instagram-section">
+
+<p class="subtitle"
+data-ru="МОЙ INSTAGRAM"
+data-uz="MENING INSTAGRAMIM">
+МОЙ INSTAGRAM
+</p>
+
+<h2
+data-ru="Следите за моей работой и полезными советами по уходу за кожей"
+data-uz="Teri parvarishi bo‘yicha maslahatlar va ish jarayonimni Instagram sahifamda kuzatib boring">
+Следите за моей работой и полезными советами по уходу за кожей
+</h2>
+
+<a class="insta-link"
+href="https://www.instagram.com/cosmetolog_sattarova"
+target="_blank">
+@cosmetolog_sattarova
+</a>
+
+<div class="insta-grid">
+
+<div class="insta-item">
+<video autoplay muted loop playsinline>
+<source src="{{ url_for('static', filename='video/IMG_cosmo.MP4') }}" type="video/mp4">
+</video>
+</div>
+
+<div class="insta-item">
+<video autoplay muted loop playsinline>
+<source src="{{ url_for('static', filename='video/IMG_cosmo02.MP4') }}" type="video/mp4">
+</video>
+</div>
+
+<div class="insta-item">
+<video autoplay muted loop playsinline>
+<source src="{{ url_for('static', filename='video/IMG_cosmo03.MP4') }}" type="video/mp4">
+</video>
+</div>
+
+<div class="insta-item">
+<video autoplay muted loop playsinline>
+<source src="{{ url_for('static', filename='video/IMG_cosmo04.MP4') }}" type="video/mp4">
+</video>
+</div>
+
+</div>
+
+<a class="btn insta-btn"
+href="https://www.instagram.com/cosmetolog_sattarova"
+target="_blank"
+data-ru="Перейти в Instagram"
+data-uz="Instagram sahifaga o‘tish">
+Перейти в Instagram
+</a>
+
+</section>
+
+
+
+<div id="popup" class="popup">
+
+<div class="popup-overlay"></div>
+
+<div class="popup-box">
+
+<div class="popup-close">✕</div>
+
+<h2 data-ru="Запись на консультацию" data-uz="Konsultatsiyaga yozilish">
+Запись на консультацию
+</h2>
+
+<form action="/send" method="POST">
+
+<input type="text" name="name" placeholder="Имя / Ism" required>
+<input type="tel" name="phone" placeholder="+998 (__) ___-__-__" required>
+<input type="text" name="comment" placeholder="Комментарий / Izoh">
+
+<button type="submit" class="popup-btn"
+data-ru="Отправить"
+data-uz="Yuborish">
+Отправить
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<section class="contact-section">
+
+<div class="contact-container">
+
+<div class="contact-form">
+
+<h2 data-ru="Связаться со мной" data-uz="Men bilan bog‘lanish">
+Связаться со мной
+</h2>
+
+<form action="/send" method="POST">
+
+<input type="text" name="name" placeholder="Имя / Ism">
+<input type="email" name="email" placeholder="Email">
+<input type="tel" name="phone" placeholder="+998 (__) ___-__-__">
+<textarea name="comment" placeholder="Комментарий / Izoh"></textarea>
+
+<button type="submit" class="btn"
+data-ru="Отправить"
+data-uz="Yuborish">
+Отправить
+</button>
+
+</form>
+
+
+
+</div>
+
+<div class="contact-image">
+<img src="{{ url_for('static', filename='img/f4.PNG') }}">
+</div>
+
+</div>
+
+</section>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

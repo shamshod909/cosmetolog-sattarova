@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="popup" class="popup">
+
+<div class="popup-overlay" onclick="closePopup()"></div>
+
+<div class="popup-box">
+
+<div class="popup-close" onclick="closePopup()">✕</div>
+
+<h2>Запись на консультацию</h2>
+
+<input type="text" placeholder="Как вас зовут">
+
+<input type="tel" placeholder="Ваш телефон">
+
+<input type="text" placeholder="Комментарий (необязательно)">
+
+<button href="/send.html" class="apply-btn open-popup">
+    Отправить заявку
+</button>
+
+</div>
+
+</div>
+<script>
+const popup = document.getElementById("popup");
+
+document.querySelector(".open-popup").addEventListener("click", function(e){
+e.preventDefault();
+popup.style.display="block";
+});
+
+document.querySelector(".popup-close").onclick = function(){
+popup.style.display="none";
+}
+
+document.querySelector(".popup-overlay").onclick = function(){
+popup.style.display="none";
+}
+
+document.addEventListener("keydown", function(e){
+if(e.key === "Escape"){
+popup.style.dis
+play="none";
+}
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const popup = document.getElementById("popup");
+
+document.querySelectorAll(".open-popup").forEach(function(btn){
+  btn.addEventListener("click", function(e){
+    e.preventDefault();
+    popup.style.display = "block";
+  });
+});
+
+document.querySelector(".popup-close").addEventListener("click", function(){
+  popup.style.display = "none";
+});
+
+document.querySelector(".popup-overlay").addEventListener("click", function(){
+  popup.style.display = "none";
+});
+
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    popup.style.display = "none";
+  }
+});
+
+});
+</script>
+</body>
+</html>
