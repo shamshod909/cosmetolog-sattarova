@@ -1,3 +1,9 @@
+html, body { 
+  max-width: 100% !important; 
+  overflow-x: hidden !important; 
+  width: 100% !important;
+}
+
 body{
 margin:0;
 font-family:Georgia, serif;
@@ -548,192 +554,14 @@ section.show{
 opacity:1;
 transform:translateY(0);
 }
+
 /* ========================================================
-   МАГИЯ МОБИЛЬНОЙ ВЕРСТКИ (ДЛЯ СМАРТФОНОВ И ПЛАНШЕТОВ)
+   ФИКС ОТ ШАМШОДА: ОГРАНИЧЕНИЕ ШИРИНЫ ДЛЯ МОБИЛОК
    ======================================================== */
-
-@media (max-width: 1024px) {
-  /* Корректируем глобальные отступы для планшетов */
-  .header, .hero, .about-section, .services-section, 
-  .education-section, .lecture-section, .contact-section {
-    padding: 20px 30px !important;
-    margin: 80px auto !important;
-    gap: 40px !important;
-  }
-}
-
 @media (max-width: 768px) {
-  /* 1. Глобальные сбросы для мобилок */
-  html, body {
-    overflow-x: hidden !important; /* Убирает горизонтальный скролл */
-    width: 100%;
-  }
-
-  /* 2. Шапка и Меню */
-  .header {
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px !important;
-    position: static !important; /* Отключаем sticky на мобилке, чтобы не занимать экран */
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 15px !important;
-    text-align: center;
-  }
-
-  .menu a {
-    font-size: 18px;
-  }
-
-  .lang-switch {
-    margin-top: 10px;
-  }
-
-  /* 3. Главный экран (Hero) */
-  .hero {
-    flex-direction: column-reverse; /* Картинка будет сверху, текст снизу */
-    text-align: center;
-    margin: 40px auto !important;
-    padding: 0 20px !important;
-  }
-
-  .hero-text h1 {
-    font-size: 38px !important; /* Уменьшаем огромный шрифт */
-    line-height: 1.2;
-  }
-
-  .btn {
-    margin-top: 40px !important;
-    width: 100%; /* Кнопка на весь экран */
-  }
-
-  /* Исправляем блок с фото косметолога */
-  .hero-image, .photo, .frame {
-    width: 100% !important;
-    max-width: 320px !important; /* Фото аккуратно сожмется */
-    height: auto !important;
-  }
-  
-  .frame {
-    top: -15px;
-    left: -15px;
-  }
-
-  .circle {
-    width: 80px !important; /* Анимированный круг делаем меньше */
-    top: -40px;
-    left: -40px;
-  }
-
-  .bg {
-    display: none !important; /* Убираем огромную фоновую полосу, она ломает мобилку */
-  }
-
-  /* 4. Блок О нас (About) */
-  .about-container {
-    flex-direction: column;
-    gap: 50px !important;
-  }
-
-  .about-images, .about-main {
-    width: 100% !important;
-    max-width: 320px !important;
-  }
-
-  .about-small {
-    width: 160px !important;
-    bottom: -30px;
-    right: -20px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-text h2 {
-    font-size: 32px !important;
-  }
-
-  .about-stats {
-    gap: 40px !important;
-    justify-content: center;
-  }
-
-  /* 5. Услуги (Services) — Перестраиваем сетку в 1 колонку */
-  .services-title {
-    font-size: 32px !important;
-    margin-bottom: 40px !important;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr !important; /* Карточки встают одна под другую */
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .service-card {
-    min-height: auto !important;
-    padding: 30px 20px !important;
-  }
-
-  /* 6. Обучение и Лекции */
-  .education-container, .lecture-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px !important;
-  }
-
-  .education-text h2, .lecture-container h2 {
-    font-size: 32px !important;
-  }
-
-  .education-images img, .lecture-container img {
-    width: 100% !important;
-    max-width: 320px !important;
-  }
-
-  /* 7. Отзывы (Reviews) — В одну колонку */
-  .reviews-grid {
-    grid-template-columns: 1fr !important;
-    gap: 30px !important;
-    padding: 0 20px;
-  }
-
-  /* 8. Инстаграм сетка — Делаем 2х2 вместо 4 в ряд */
-  .instagram-section h2 {
-    font-size: 26px !important;
-  }
-
-  .insta-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important;
-    padding: 0 10px;
-  }
-
-  .insta-item video {
-    height: 250px !important;
-  }
-
-  /* 9. Контакты и Всплывающее окно (Popup) */
-  .contact-container {
-    flex-direction: column;
-    gap: 50px !important;
-  }
-
-  .contact-form, .contact-image img {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .contact-form h2 {
-    font-size: 32px !important;
-    text-align: center;
-  }
-
-  .popup-box {
-    width: 90% !important;
-    padding: 30px !important;
+  html, body, .header, main, section, div, .hero, .services-section { 
+    max-width: 100% !important; 
+    overflow-x: hidden !important; 
+    box-sizing: border-box !important;
   }
 }
